@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ThoughtWorks</title>
+    <script src="jquery.js"></script>
+    <script src="src/index.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            width: 100%;
+            height: 600px;
+            position: relative;
+        }
+        .container{
+            width: 100%;
+            height: inherit;
+            position: absolute;
+            float: left;
+
+        }
+
+        .container li{
+            width: 100%;
+            height: 520px;
+            display: none;
+        }
+
+        .list{
+            background: black;
+            opacity: 0.5;
+            width: 420px;
+            height: 520px;
+            float: right;
+            position: absolute;
+            right: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list li {
+            font-size: 22px;
+            color: white;
+            line-height: 45px;
+            list-style: none;
+        }
+
+        .list li a{
+            color: greenyellow;
+            font-size: 25px;
+            text-decoration-line: none;
+            padding-left: 10px;
+        }
+        .container ul li.currImg{
+            display: block;
+        }
+        .nav{
+            background-color: gray;
+            opacity: 0.6;
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .span{
+            font-size: 4em;
+            color: cornflowerblue;
+            position: absolute;
+            left: 150px;
+        }
+        #name{
+            position: absolute;
+            top: 20px;
+            right: 500px;
+            width: 450px;
+            height: 50px;
+            border-radius: 20px;
+            font-size: 1.5em;
+        }
+        #search{
+            position: absolute;
+            top: 21px;
+            right: 500px;
+            width: 100px;
+            height: 53px;
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: dodgerblue;
+        }
+        .type{
+            width: 75%;
+            font-size: 2.5em;
+            position: absolute;
+            top: 580px;
+            left: 240px;
+            background-color: antiquewhite;
+        }
+        .type ul{
+            list-style: none;
+        }
+        .type ul li a{
+            text-decoration-line: none;
+            padding-left: 60px;
+            color: lightpink;
+        }
+        .type ul li a:active{
+            color: peachpuff;
+        }
+        .hot{
+            width: 75%;
+            position: absolute;
+            top: 764px;
+            left: 240px;
+            font-size: 1.5em;
+        }
+        .list-wp{
+            width: 75%;
+            font-size: 2em;
+            position: absolute;
+            top: 810px;
+            left: 240px;
+            /*border: 1px skyblue solid;*/
+            background-color: floralwhite;
+        }
+        .page-info{
+            position: absolute;
+            top: 1400px;
+            left: 860px;
+            font-size: 30px;
+        }
+        .page-info a{
+            text-decoration-line: blink;
+        }
+    </style>
+
+</head>
+<body>
+<div class="content">
+    <div class="container">
+        <div class="nav">
+            <span class="span">ThoughtWorks</span>
+            <input type="text" placeholder="请输入影片名" id="name">
+            <input type="button" value="搜索" id="search">
+        </div>
+
+        <ul>
+            <li style="background: url('img/01.jpg')" class="currImg"></li>
+            <li style="background: url('img/02.jpg')"></li>
+            <li style="background: url('img/03.jpg')"></li>
+            <li style="background: url('img/04.jpg')"></li>
+            <li style="background: url('img/05.jpg')"></li>
+            <li style="background: url('img/06.jpg')"></li>
+            <li style="background: url('img/07.jpg')"></li>
+        </ul>
+    </div>
+    <div class="list">
+        <ul>
+            <li class="col"><a href="https://v.youku.com/v_show/id_XNDI3OTc1MzQyNA==.html?spm=a2h0k.11417342.soresults.dtitle&s=bbbf55c4aca247f4a3cf">追龙2：古仔深入虎穴对决梁家辉</a> </li>
+            <li><a href="https://v.youku.com/v_show/id_XNDI1MjQwNzk0MA==.html?spm=a2h0k.11417342.soresults.dtitle&s=efbfbd1e1b51462411ef">水怪：东方神秘怪兽来袭</a></li>
+            <li><a href="https://v.youku.com/v_show/id_XNDI0NzA0NDAzNg==.html?spm=a2h0k.11417342.soresults.dtitle&s=efbfbd1aefbfbd3aefbf">狂暴巨兽：巨石森强大战惊天怪兽</a></li>
+            <li><a href="https://v.youku.com/v_show/id_XNDI0OTQ2NjQ5Ng==.html?spm=a2h0k.11417342.soresults.dtitle&s=14a03648477642f19e1c">扫毒2：刘德华古天乐影帝高燃对决</a></li>
+            <li><a href="https://v.youku.com/v_show/id_XNDE3NjEzNzM0OA==.html?spm=a2h0k.11417342.soresults.dtitle&s=efbfbd211fefbfbdefbf">掠食城市：硬核蒸汽朋克末日科幻</a></li>
+            <li><a href="https://v.youku.com/v_show/id_XNDI1NDI5NDAzMg==.html?spm=a2h0k.11417342.soresults.dtitle&s=70efbfbd3f5201efbfbd">喜剧人之冒牌杀手：冒牌杀手爆笑闯江湖</a></li>
+            <li><a href="https://v.youku.com/v_show/id_XNDI1ODYxNzc0OA==.html?spm=a2h0k.11417342.soresults.dtitle&s=95be1ad80d6111df97c0">雷霆沙赞：神奇正太雷劈变超人</a></li>
+        </ul>
+    </div>
+</div>
+
+<div  class="type">
+    <ul>
+        <li>
+            <a href="">剧情</a>
+            <a href="">家庭</a>
+            <a href="">爱情</a>
+            <a href="">奇幻</a>
+            <a href="">悬疑</a>
+            <a href="">惊悚</a>
+            <a href="">冒险</a>
+            <a href="">西部</a>
+            <a href="">音乐</a>
+        </li>
+        <li>
+            <a href="">动作</a>
+            <a href="">喜剧</a>
+            <a href="">武侠</a>
+            <a href="">历史</a>
+            <a href="">战争</a>
+            <a href="">犯罪</a>
+            <a href="">科幻</a>
+            <a href="">灾难</a>
+            <a href="">歌舞</a>
+        </li>
+        <li>
+            <a href="">儿童</a>
+            <a href="">动画</a>
+            <a href="">传记</a>
+            <a href="">运动</a>
+            <a href="">同性</a>
+            <a href="">情色</a>
+            <a href="">纪录片</a>
+        </li>
+    </ul>
+</div>
+<!-- 电影列表栏：展示最新的几部电影 -->
+<div class="hot">
+    <span style="font-size: 1.5em">最近热映</span> <br>
+</div>
+<div class="list-wp">
+
+</div>
+
+<div class="empty" style="display: none; line-height: 200px;">
+    <p>没有找到结果</p>
+</div>
+
+<div class="page-info">
+    <a id="lastpage">上一页</a>
+    <a id="page">1</a> / <a id="total">1</a>
+    <a id="nextpage">下一页</a>
+</div>
+
+</body>
+</html>
